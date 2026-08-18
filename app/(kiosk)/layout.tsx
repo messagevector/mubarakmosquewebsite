@@ -7,7 +7,7 @@ export default function KioskLayout({
 }) {
   return (
     <div className="min-h-screen bg-ink text-text">
-      <AutoRefresh minutes={10} />
+      <AutoRefresh minutes={60} />
       {children}
     </div>
   );

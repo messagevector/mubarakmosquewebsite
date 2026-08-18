@@ -2,7 +2,7 @@ import HeroPrayerCard from "@/components/HeroPrayerCard";
 import { fetchPrayerTimes } from "@/lib/prayer-times";
 import { SITE } from "@/lib/site";
 
-export const revalidate = 600;
+export const revalidate = 3600;
 export const metadata = { title: "TV Outside" };
 
 export default async function TvOutsidePage() {
