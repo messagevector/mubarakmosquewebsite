@@ -62,7 +62,7 @@ export default function Header() {
           : "bg-gradient-to-b from-black/50 to-transparent"
       }`}
     >
-      <nav className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
+      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/logo-white.png"
@@ -78,15 +78,6 @@ export default function Header() {
             </span>
           </span>
         </Link>
-
-        <div className="pointer-events-none absolute left-[38%] hidden -translate-x-1/2 xl:block">
-          <span
-            dir="rtl"
-            className="select-none font-arabic text-2xl tracking-wide text-gold"
-          >
-            {SITE.bismillah}
-          </span>
-        </div>
 
         <div className="hidden items-center gap-8 lg:flex">
           <Link href="/" className={linkClass}>
