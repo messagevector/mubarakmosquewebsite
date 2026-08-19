@@ -287,38 +287,44 @@ h3,
 }
 
 .next-wrap {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  column-gap: 16px;
+  row-gap: 6px;
   padding: 14px 0 20px;
   border-bottom: 1px solid var(--line);
 }
 
+.next-kicker {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
 .next-name {
+  margin: 0;
   font-family: var(--serif);
   font-size: 44px;
   color: #fff;
   line-height: 1;
 }
 
-.next-name small {
-  display: block;
-  font-family: var(--sans);
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 6px;
-}
-
 .countdown {
+  margin: 0;
   font-family: var(--sans);
   font-weight: 700;
   font-size: 30px;
   color: var(--gold);
   font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .live {

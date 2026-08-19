@@ -61,10 +61,8 @@ export default function HeroPrayerCard({
       <div className="next-wrap">
         {next ? (
           <>
-            <p className="next-name">
-              <small>Coming up{next.isTomorrow ? " tomorrow" : ""}</small>
-              {next.name}
-            </p>
+            <p className="next-kicker">Coming up{next.isTomorrow ? " tomorrow" : ""}</p>
+            <p className="next-name">{next.name}</p>
             {showCountdown && (
               <p className="countdown">
                 {pad(hours)}:{pad(minutes)}:{pad(seconds)}
